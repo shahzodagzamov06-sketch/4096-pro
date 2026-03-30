@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types import WebAppInfo, ReplyKeyboardMarkup, KeyboardButton
 
 # Replace with your API Token from BotFather
-API_TOKEN = '8770553491:AAHiNyJltz5dE1gEQedA4vVQ55WWNP0yxis'
+API_TOKEN = '8770553491:AAGmSVYbgz66eUCFXJyflUCZq9N2xtQeF6U'
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
