@@ -4,7 +4,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, Callb
 # Replace these with your actual details
 BOT_TOKEN = '8770553491:AAGmSVYbgz66eUCFXJyflUCZq9N2xtQeF6U'
 GAME_SHORT_NAME = 'play4096'  # The Short Name you gave to BotFather
-GAME_URL = 'https://shahzodagzamov06-sketch.github.io/4096-pro'
+GAME_URL = 'https://shahzodagzamov06-sketch.github.io/4096-pro/'
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Sends the game when a user type /start."""
@@ -34,3 +34,23 @@ if __name__ == '__main__':
     
     print("Bot is running...")
     application.run_polling()
+from aiohttp import web
+import os
+
+async def handle(request):
+    return web.Response(text="Bot is Live!")
+
+if __name__ == '__main__':
+    # Botni ishga tushirish qismini saqlagan holda
+    # Render uchun port ochamiz
+    app = web.Application()
+    app.router.add_get('/', handle)
+    
+    # Bu qatorlar kodingiz oxirida bo'lsin
+    port = int(os.environ.get("PORT", 8080))
+    
+    # Botni va Web Serverni yurgizish (Sizning kodingizga moslab)
+    application = ApplicationBuilder().token(BOT_TOKEN).build()
+    # ... qolgan handlerlar ...
+    
+    web.run_app(app, host='0.0.0.0', port=port)
