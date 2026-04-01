@@ -3,7 +3,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, Callb
 
 # Replace these with your actual details
 BOT_TOKEN = '8770553491:AAGmSVYbgz66eUCFXJyflUCZq9N2xtQeF6U'
-GAME_SHORT_NAME = 'game4096'  # The Short Name you gave to BotFather
+GAME_SHORT_NAME = 'play4096'  # The Short Name you gave to BotFather
 GAME_URL = 'https://shahzodagzamov06-sketch.github.io/4096-pro'
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
