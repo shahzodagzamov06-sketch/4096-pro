@@ -8,7 +8,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, Callb
 
 # --- 1. SOZLAMALAR (O'zingiznikini yozing) ---
 BOT_TOKEN = '8770553491:AAGmSVYbgz66eUCFXJyflUCZq9N2xtQeF6U'
-GEMINI_API_KEY = 'AIzaSyDqD2SRHdmNsoTlG-FS0K-yMB9QnHbpSGo' # Google AI Studio-dan olgan kalitni shu yerga qo'ying
+GEMINI_API_KEY='AIzaSyDqD2SRHdmNsoTlG-FS0K-yMB9QnHbpSGo' # Google AI Studio-dan olgan kalitni shu yerga qo'ying
 GAME_SHORT_NAME = 'play4096'
 GAME_URL = 'https://shahzodagzamov06-sketch.github.io/4096-pro/'
 
